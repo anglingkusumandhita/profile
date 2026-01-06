@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Diri Saya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigasi -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">Portfolio.</a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-blue-600 transition">Utama</a>
+                <a href="#about" class="hover:text-blue-600 transition">Tentang</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Kemahiran</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projek</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Hubungi</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <h2 class="text-blue-600 font-semibold tracking-wide uppercase mb-2">Selamat Datang</h2>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">Hai, Saya <span class="gradient-text">Nama Anda</span></h1>
+                <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    Seorang Pembangun Web yang meminati reka bentuk UI/UX dan pembangunan aplikasi moden yang memudahkan kehidupan pengguna.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#contact" class="px-8 py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-200">Hubungi Saya</a>
+                    <a href="#projects" class="px-8 py-3 border-2 border-gray-200 rounded-full font-semibold hover:border-blue-600 hover:text-blue-600 transition">Lihat Projek</a>
+                </div>
+            </div>
+            <div class="flex-1 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-blue-600 rounded-3xl rotate-6 opacity-20"></div>
+                    <div class="absolute inset-0 bg-purple-600 rounded-3xl -rotate-6 opacity-20"></div>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&q=80" alt="Foto Profil" class="relative z-10 w-full h-full object-cover rounded-3xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Tentang Saya</h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                Saya mempunyai pengalaman dalam membina laman web yang responsif dan mesra pengguna. Fokus utama saya adalah untuk menggabungkan estetika dengan fungsi yang mantap. Saya sentiasa belajar teknologi baharu untuk kekal relevan dalam industri digital yang pesat ini.
+            </p>
+        </div>
+    </section>
+
+    <!-- Kemahiran -->
+    <section id="skills" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">Kemahiran Teknikal</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
+                    <i class="fab fa-html5 text-4xl text-orange-500 mb-4"></i>
+                    <h3 class="font-bold">HTML5</h3>
+                </div>
+                <div class="p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
+                    <i class="fab fa-css3-alt text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold">CSS3 & Tailwind</h3>
+                </div>
+                <div class="p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
+                    <i class="fab fa-js text-4xl text-yellow-500 mb-4"></i>
+                    <h3 class="font-bold">JavaScript</h3>
+                </div>
+                <div class="p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition">
+                    <i class="fab fa-react text-4xl text-blue-400 mb-4"></i>
+                    <h3 class="font-bold">React JS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projek -->
+    <section id="projects" class="py-20 bg-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Projek Terbaru</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Kad Projek 1 -->
+                <div class="group bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gray-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?fit=crop&w=800&q=80" alt="Projek 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">E-Dagang Minimalis</h3>
+                        <p class="text-gray-600 mb-4">Laman web kedai dalam talian menggunakan React dan Tailwind CSS.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:underline">Lihat Detail →</a>
+                    </div>
+                </div>
+                <!-- Kad Projek 2 -->
+                <div class="group bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gray-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?fit=crop&w=800&q=80" alt="Projek 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Aplikasi Pengurusan Tugas</h3>
+                        <p class="text-gray-600 mb-4">Alat produktiviti untuk menjejak tugasan harian dengan integrasi storan awan.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:underline">Lihat Detail →</a>
+                    </div>
+                </div>
+                <!-- Kad Projek 3 -->
+                <div class="group bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all">
+                    <div class="h-48 bg-gray-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?fit=crop&w=800&q=80" alt="Projek 3" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Laman Portfolio Kreatif</h3>
+                        <p class="text-gray-600 mb-4">Reka bentuk portfolio responsif dengan animasi moden.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:underline">Lihat Detail →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hubungi -->
+    <section id="contact" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto bg-blue-600 rounded-3xl p-8 md:p-12 shadow-2xl">
+            <div class="text-center text-white mb-10">
+                <h2 class="text-3xl font-bold mb-4">Mari Bekerjasama!</h2>
+                <p class="opacity-90">Ada sebarang projek atau soalan? Hantarkan pesanan kepada saya.</p>
+            </div>
+            <form id="contactForm" class="space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Nama Anda" class="w-full p-4 rounded-xl focus:ring-2 focus:ring-blue-300 outline-none" required>
+                    <input type="email" placeholder="E-mel Anda" class="w-full p-4 rounded-xl focus:ring-2 focus:ring-blue-300 outline-none" required>
+                </div>
+                <textarea rows="4" placeholder="Pesanan Anda" class="w-full p-4 rounded-xl focus:ring-2 focus:ring-blue-300 outline-none" required></textarea>
+                <button type="submit" class="w-full py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-gray-100 transition shadow-lg">Hantar Pesanan</button>
+            </form>
+            <div id="successMsg" class="hidden mt-4 text-center text-white font-medium p-4 bg-green-500/20 rounded-xl">
+                Pesanan berjaya dihantar! Terima kasih.
+            </div>
+        </div>
+    </section>
+
+    <!-- Kaki Laman -->
+    <footer class="py-10 text-center text-gray-500 border-t">
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="#" class="hover:text-blue-600 text-xl"><i class="fab fa-github"></i></a>
+            <a href="#" class="hover:text-blue-600 text-xl"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="hover:text-blue-600 text-xl"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Nama Anda. Hak Cipta Terpelihara.</p>
+    </footer>
+
+    <script>
+        // Logik Ringkas Borang Hubungan
+        const form = document.getElementById('contactForm');
+        const successMsg = document.getElementById('successMsg');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            form.classList.add('hidden');
+            successMsg.classList.remove('hidden');
+            
+            // Logik simulasi hantar data
+            console.log("Borang dihantar!");
+        });
+
+        // Toggle Menu Mobil
+        const menuBtn = document.getElementById('menuBtn');
+        menuBtn.addEventListener('click', () => {
+            // Dalam projek sebenar, anda boleh menambah pautan mobil di sini
+            console.log("Menu diklik");
+        });
+    </script>
+</body>
+</html>
